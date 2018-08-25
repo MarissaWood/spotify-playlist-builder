@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 50px;
+
+}

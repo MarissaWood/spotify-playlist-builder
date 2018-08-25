@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
-import "./SongPreview.css";
+// import "./SongPreview.css";
 import SongDetail from "./SongDetail";
 
 class SongPreview extends Component {

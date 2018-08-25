@@ -22,7 +22,23 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.alert {
+  margin: 40px 30px;
+  font-size: 1.2em;
+  color: red;
+  width: 50%;
+  font-weight: bold;
+}
+
+.radio-buttons {
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+}
+
+.refresh {
+  text-decoration: none;
+  font-weight: bold;
 }

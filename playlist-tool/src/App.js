@@ -162,28 +162,12 @@ class App extends Component {
         <div className="main">
           {message}
           <div className="right-column">
-            <form className="radio-buttons">
-              <label>
-                <input
-                  type="radio"
-                  name="right"
-                  value="playlist"
-                  onChange={this.handleOptionChange}
-                  defaultChecked
-                />
-                Show Playlist
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="right"
-                  value="guidelines"
-                  onChange={this.handleOptionChange}
-                />
-                Show Section Guidelines
-              </label>
-            </form>
-            {toggle}
+            <Playlist
+              playlist={this.state.playlist}
+              clearPlaylist={this.clearPlaylist}
+              removeLastSong={this.removeLastSong}
+              savePlaylist={this.savePlaylist}
+            />
           </div>
         </div>
       </div>
