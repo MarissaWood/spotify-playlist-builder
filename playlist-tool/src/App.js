@@ -156,7 +156,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={spotifylogo} alt=" " className="logo" />
-          <h1 className="App-title">Yoga Sculpt Playlist Building Tool</h1>
+          <h1 className="App-title">Spotify Playlist Building Tool</h1>
           {login}
         </header>
         <div className="main">
