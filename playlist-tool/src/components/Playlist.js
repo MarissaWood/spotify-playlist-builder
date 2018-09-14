@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SongDisplay from "./SongDisplay";
-// import "./Playlist.css";
+import "./Playlist.css";
 
 class Playlist extends Component {
   msToTime = duration => {

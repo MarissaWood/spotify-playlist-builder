@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import "./SongDetail.css";
+import "./SongDetail.css";
 
 class SongDetail extends Component {
   constructor() {

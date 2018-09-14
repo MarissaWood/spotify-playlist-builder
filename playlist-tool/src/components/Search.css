@@ -1,0 +1,61 @@
+.left-column {
+    padding: 10px 30px 10px 10px;
+}
+
+form {
+    display: inline-block;
+}
+
+.right-column {
+    min-width: 40%;
+    max-width: 50%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-bottom: 1px black solid;
+}
+li div {
+    display: flex; 
+    flex-direction: column;
+}
+
+.topRow, .details {
+    flex-direction: row;
+}
+
+
+.track, .artist {
+    margin: 0 10px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text] {
+    width: 200px;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+input[type=submit], .next {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    margin: 8px 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.next {
+    margin-bottom: 30px;
+}

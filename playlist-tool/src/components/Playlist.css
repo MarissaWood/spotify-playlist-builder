@@ -1,0 +1,14 @@
+.hoverText {
+    display: none;
+}
+  
+.save-playlist:hover + .hoverText {
+  display: block;
+  color: red;
+  padding: 0 30px;
+}
+
+button {
+    margin: 5px;
+    padding: 3px 5px;
+}
