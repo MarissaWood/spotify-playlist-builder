@@ -26,6 +26,7 @@ class Search extends Component {
     let auth = "Bearer " + this.props.token;
     const config = {
       headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
         Authorization: auth
       }

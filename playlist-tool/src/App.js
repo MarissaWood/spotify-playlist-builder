@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let spotify_token = window.location.hash.substr(14, 195);
+    let spotify_token = window.location.hash.substr(14, 198);
     this.setState({
       token: spotify_token
     });
