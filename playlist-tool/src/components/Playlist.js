@@ -63,7 +63,14 @@ class Playlist extends Component {
 
     return (
       <div>
-        <h1>PlayList</h1>
+        <h1>
+          Playlist Title:{" "}
+          <input
+            type="text"
+            name="playlistTitle"
+            onChange={this.props.handlePlaylistTitle}
+          />
+        </h1>
         <div className="stats">
           <p>
             <strong>Total time:</strong> {totalTime}

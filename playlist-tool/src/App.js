@@ -12,8 +12,8 @@ class App extends Component {
       token: null,
       isLoggedIn: false,
       playlist: [],
-      refreshToken: false
-      // user_id: null
+      refreshToken: false,
+      playlistTitle: "New Playlist"
     };
   }
 
@@ -36,6 +36,10 @@ class App extends Component {
 
   clearPlaylist = e => {
     this.setState({ playlist: [] });
+  };
+
+  handlePlaylistTitle = e => {
+    this.setState({ playlistTitle: e.target.value });
   };
 
   removeLastSong = () => {
@@ -71,7 +75,7 @@ class App extends Component {
             Authorization: auth
           },
           data: {
-            name: "New Playlist",
+            name: this.state.playlistTitle,
             description: "playlist built with spotify-playlist.surge.sh",
             public: "false"
           }
@@ -167,6 +171,7 @@ class App extends Component {
               clearPlaylist={this.clearPlaylist}
               removeLastSong={this.removeLastSong}
               savePlaylist={this.savePlaylist}
+              handlePlaylistTitle={this.handlePlaylistTitle}
             />
           </div>
         </div>
